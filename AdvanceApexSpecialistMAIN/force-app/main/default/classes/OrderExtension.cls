@@ -14,6 +14,7 @@ public class OrderExtension {
   ApexPages.StandardSetController standardSetController;
 
   public OrderExtension(ApexPages.StandardController standardController){
+    System.debug('Hello Test');
     orderRecord = (Order)standardController.getRecord();
     orderItemMap = new Map<Id, OrderItem>();
     if( orderRecord.Id != null ) {
