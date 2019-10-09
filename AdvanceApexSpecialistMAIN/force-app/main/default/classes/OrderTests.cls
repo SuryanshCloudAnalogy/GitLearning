@@ -40,6 +40,7 @@ public class OrderTests {
     ext.GetHasNext();
     ext.GetTotalPages();
     ext.GetPageNumber();
+    System.debug('=====');
     List<SelectOption> options = ext.GetFamilyOptions();
   }
 }
